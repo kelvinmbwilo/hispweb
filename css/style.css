@@ -1,0 +1,247 @@
+/* 1. CSS RESET
+================================================================================ */
+
+/*h1, h2, h3, h4, h5, h6, li, p, ul { border: 0; margin: 0; padding: 0;}
+ol, ul {list-style: none;}
+li {display: list-item;}*/
+
+/* HEADINGS
+----------------------------------------------------------------------------- */
+.freshdesignweb h4{
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: 400;
+    color: #707070;
+    text-transform: uppercase;
+	font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 8px; 
+}
+/* PARAGRAPH
+----------------------------------------------------------------------------- */
+.freshdesignweb p{
+    font: 12px 'Droid Sans', sans-serif;
+    line-height: 18px;
+    color: #8f8f8f;
+}
+/* ARTICLE SLIDER
+----------------------------------------------------------------------------- */
+.grid_3.carousel-article .caroufredsel_wrapper{
+    /*width: 100% !important;*/
+}
+
+.carousel-article{
+    width: 100%;
+    height: 200px;
+    width: 100%;
+}
+
+.grid_3.carousel-article .carousel-li > li{
+    width: 250px;
+    margin-right: 0;
+}
+
+.carousel-pagination {
+    text-align: center;
+    float: left;
+    margin-top: 10px;
+}
+
+.carousel-pagination a {
+    background: url('../images/btn.png') no-repeat;
+    width: 15px;
+    height: 5px;
+    margin: 0 5px 0 0;
+    display: inline-block;
+}
+
+.carousel-pagination a.selected {
+    background: url('../images/btn-active.png') no-repeat;
+    cursor: default;
+}
+
+.carousel-pagination a span {
+    display: none;
+}
+
+.com { color: #93a1a1; }
+.lit { color: #195f91; }
+.pun, .opn, .clo { color: #93a1a1; }
+.fun { color: #dc322f; }
+.str, .atv { color: #D14; }
+.kwd, .prettyprint .tag { color: #1e347b; }
+.typ, .atn, .dec, .var { color: teal; }
+.pln { color: #48484c; }
+
+.prettyprint {
+  padding: 8px;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+}
+.prettyprint.linenums {
+  -webkit-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+     -moz-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+          box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+}
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums {
+  margin: 0 0 0 33px; /* IE indents via margin-left */
+}
+ol.linenums li {
+  padding-left: 12px;
+  color: #bebec5;
+  line-height: 20px;
+  text-shadow: 0 1px 0 #fff;
+}
+
+.bs-docs-example {
+  position: relative;
+  margin: 15px 0;
+  padding: 39px 19px 14px;
+  *padding-top: 19px;
+  background-color: #fff;
+  /*border: 1px solid #ddd;*/
+  border: 0px solid rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+-moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+-webkit-background-clip: padding-box;
+  -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+          border-radius: 8px;
+ font-size: 11px;
+ line-height: 13px;
+}
+
+/* Echo out a label for the example */
+.bs-docs-example:after {
+  content: "WELCOME TO HISP TANZANIA";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  padding: 3px 27px;
+  font-size: 17px;
+  font-weight: bold;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  color: #E86336;
+  -webkit-border-radius: 4px 0 4px 0;
+     -moz-border-radius: 4px 0 4px 0;
+          border-radius: 4px 0 4px 0;
+}
+
+/* Remove spacing between an example and it's code */
+.bs-docs-example + .prettyprint {
+  margin-top: -20px;
+  padding-top: 15px;
+}
+
+/* Tweak examples
+------------------------- */
+.bs-docs-example > p:last-child {
+  margin-bottom: 0;
+}
+.bs-docs-example .table,
+.bs-docs-example .progress,
+.bs-docs-example .well,
+.bs-docs-example .alert,
+.bs-docs-example .hero-unit,
+.bs-docs-example .pagination,
+.bs-docs-example .navbar,
+.bs-docs-example > .nav,
+.bs-docs-example blockquote {
+  margin-bottom: 5px;
+}
+.bs-docs-example .pagination {
+  margin-top: 0;
+}
+.bs-navbar-top-example,
+.bs-navbar-bottom-example {
+  z-index: 1;
+  padding: 0;
+  height: 90px;
+  overflow: hidden; /* cut the drop shadows off */
+}
+.bs-navbar-top-example .navbar-fixed-top,
+.bs-navbar-bottom-example .navbar-fixed-bottom {
+  margin-left: 0;
+  margin-right: 0;
+}
+.bs-navbar-top-example {
+  -webkit-border-radius: 0 0 4px 4px;
+     -moz-border-radius: 0 0 4px 4px;
+          border-radius: 0 0 4px 4px;
+}
+.bs-navbar-top-example:after {
+  top: auto;
+  bottom: -1px;
+  -webkit-border-radius: 0 4px 0 4px;
+     -moz-border-radius: 0 4px 0 4px;
+          border-radius: 0 4px 0 4px;
+}
+.bs-navbar-bottom-example {
+  -webkit-border-radius: 4px 4px 0 0;
+     -moz-border-radius: 4px 4px 0 0;
+          border-radius: 4px 4px 0 0;
+}
+.bs-navbar-bottom-example .navbar {
+  margin-bottom: 0;
+}
+form.bs-docs-example {
+  padding-bottom: 19px;
+}
+
+/* Images */
+.bs-docs-example-images img {
+  margin: 10px;
+  display: inline-block;
+}
+
+/* Tooltips */
+.bs-docs-tooltip-examples {
+  text-align: center;
+  margin: 0 0 10px;
+  list-style: none;
+}
+.bs-docs-tooltip-examples li {
+  display: inline;
+  padding: 0 10px;
+}
+
+/* Popovers */
+.bs-docs-example-popover {
+  padding-bottom: 24px;
+  background-color: #f9f9f9;
+}
+.bs-docs-example-popover .popover {
+  position: relative;
+  display: block;
+  float: left;
+  width: 260px;
+  margin: 20px;
+}
+
+/* Dropdowns */
+.bs-docs-example-submenus {
+  min-height: 180px;
+}
+.bs-docs-example-submenus > .pull-left + .pull-left {
+  margin-left: 20px;
+}
+.bs-docs-example-submenus .dropup > .dropdown-menu,
+.bs-docs-example-submenus .dropdown > .dropdown-menu {
+  display: block;
+  position: static;
+  margin-bottom: 5px;
+  *width: 180px;
+}
+
+/* Footer section--------------- */
+#footerSection {background-image: url(../img/back.jpeg);color: white;padding: 28px 0 44px;margin-top: 20px;border-top: 1px solid #444;}
+#footerSection a{color:#ccc; font-size:11px; padding:0; line-height:24px; display:block; }
+#footerSection h5{color:#ccc; font-size:14px; padding:0; line-height:24px; display:block; }
+#footerSection a:hover{color:#fff;  }
+#footerSection  #socialMedia a{ min-width:25px; display:inline; margin-right:6px; text-align:center; line-height:1.5em;}
+#socialMedia img{max-width:60px;}
+#footerSection  #socialMedia a:hover{background:none;}
+/* ===================================================== */
