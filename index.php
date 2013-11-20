@@ -111,7 +111,7 @@ $(function(){
         ?>
             <div class="row-fluid ">
                 <div class="span9">
-                    <div class="bs-docs-example lead text-left" style="font-size: 17px">
+                    <div class="bs-docs-example lead text-left" style="font-size: 16px;line-height: 25px">
                         <p>
                             The Health Information System Programme (HISP) is a global south-south-north collaborative network aiming to improve health care in developing countries through research on and implementation of Health Information Systems. The network has since 1994 been involved in many countries in the "Global South", and at the global level is coordinated by the Global Infrastructures Research Group at Department of Informatics, University of Oslo.
                             
@@ -142,16 +142,16 @@ $(function(){
                                 <div class="span4">
                                 <div class="seperator">
                                     <!--<h1 class="text-center"><img src="img/project.png"> </h1>-->		
-                                    <img src="img/project.png" style="" class="img-rounded">		
+                                    <img src="img/project.png" style="" class="img-round">		
                                         <ul class="nav nav-list text-left" >
                                             <li class="text-center">
-                                                <a href="#">DHIS - District Health Information System<br> <img src="img/dhis.png" style="height: 100px;width: 250px " class="img-rounded" />
+                                                <a href="#" style="color: #0c0a0a">DHIS - District Health Information System<br> <img src="img/dhis.png" style="height: 100px;width: 250px " class="img-circle" />
                                                     
                                                 </a>
                                             </li>
                                             
                                             <li class="text-center">
-                                                <a href="#">HRHIS - Human Resource for Health Information System<br> <img src="img/hrhis.png" style="height: 100px;width: 250px " class="img-rounded" />
+                                                <a href="#" style="color: #0c0a0a">HRHIS - Human Resource for Health Information System<br> <img src="img/hrhis.png" style="height: 100px;width: 250px " class="img-circle" />
                                                     
                                                 </a>
                                             </li>

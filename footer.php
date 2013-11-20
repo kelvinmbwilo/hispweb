@@ -35,7 +35,7 @@
                                       </address>
 			 </div> 
 		 </div>
-            <p class="pull-right">&copy; HISP Tanzania <?php echo date("Y") ?></p>
+            <!--<p class="pull-right">&copy; HISP Tanzania <?php // echo date("Y") ?></p>-->
 	</div><!-- Container End -->
 	</div>
 	

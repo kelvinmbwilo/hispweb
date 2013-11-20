@@ -2,7 +2,6 @@
 include_once 'includes/connection.php'; 
 $query = mysql_query("SELECT * FROM news_event ORDER BY added_time DESC LIMIT 5");
 ?>
-<hr />
 <div class="freshdesignweb row-fluid">
                 <article class="grid_3  carousel-article text-center">
                     <img src="img/news.png" style="" class="img-rounded">

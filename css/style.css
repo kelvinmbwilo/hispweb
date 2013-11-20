@@ -38,7 +38,7 @@ li {display: list-item;}*/
 }
 
 .grid_3.carousel-article .carousel-li > li{
-    width: 300px;
+    width: 250px;
     margin-right: 0;
     padding-top: 10px;
 }
@@ -113,8 +113,8 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
      -moz-border-radius: 8px;
           border-radius: 8px;
  font-family: 'August Sans';
- font-size: 15px;
- line-height: 13px;
+ font-size: 14px;
+ line-height: 5px;
 }
 
 /* Echo out a label for the example */
@@ -245,11 +245,9 @@ form.bs-docs-example {
 }
 
 /* Footer section--------------- */
-#footerSection {background-image: url(../img/back.jpeg);color: white;padding: 28px 0 44px;margin-top: 20px;border-top: 1px solid #444;}
-#footerSection a{color:#ccc; font-size:11px; padding:0; line-height:24px; display:block; }
+#footerSection {background-image: url(../img/back.jpeg);color: white;padding: 8px 14px 14px 14px;margin-top: 20px;border-top: 1px solid #444;}
+#footerSection a{color:#ccc; font-size:12px; padding:0; line-height:24px; display:block; }
 #footerSection h5{color:#ccc; font-size:14px; padding:0; line-height:24px; display:block; }
 #footerSection a:hover{color:#fff;  }
-#footerSection  #socialMedia a{ min-width:25px; display:inline; margin-right:6px; text-align:center; line-height:1.5em;}
-#socialMedia img{max-width:60px;}
-#footerSection  #socialMedia a:hover{background:none;}
+
 /* ===================================================== */
