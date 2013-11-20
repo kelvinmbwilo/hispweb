@@ -70,7 +70,7 @@ $(function(){
 <!-- end -->
 </head>
     <body>
-        <div style="padding-top: 50px;" class="container">
+        <div style="padding-top: 20px;" class="container">
             <div class="span1"></div>
         <div class="span12">
         <div class="row-fluid visible-desktop">
