@@ -95,7 +95,7 @@ $(function(){
                          </form>-->
                     </div>
                     <div class="span3" style="background-color:">
-                        <img src="img/udsm1.png" style="" class="visible-desktop visible-tablet pull-right">
+                        <img src="img/udsm.png" style="" class="visible-desktop visible-tablet pull-right">
                     </div>
                 </div> 
 		
@@ -111,7 +111,7 @@ $(function(){
         ?>
             <div class="row-fluid ">
                 <div class="span9">
-                    <div class="bs-docs-example lead text-left" style="font-size: 16px;line-height: 25px">
+                    <div class="bs-docs-example lead text-left" style="font-size: 17px;line-height: 27px">
                         <p>
                             The Health Information System Programme (HISP) is a global south-south-north collaborative network aiming to improve health care in developing countries through research on and implementation of Health Information Systems. The network has since 1994 been involved in many countries in the "Global South", and at the global level is coordinated by the Global Infrastructures Research Group at Department of Informatics, University of Oslo.
                             
@@ -124,8 +124,9 @@ $(function(){
                     
                 </div>
                 <div class="span3"  style="padding-right: 20px">
-                    <?php include 'resource.php'; ?>
+                    
                     <?php include 'newslide.php'; ?>
+                    <?php include 'resource.php'; ?>
                 </div>
             </div>
                 <div class="row-fluid">

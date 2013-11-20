@@ -52,7 +52,7 @@
 	</header> 
      <!--end header--> 
     
-        <div class="navbar navbar-fixed-top row-fluid navbar-inverse visible-phone">
+        <div class="navbar navbar-fixed-top row-fluid navbar-inverse visible-phone visible-tablet">
 <div class="navbar-inner">
     <a class="brand" href="index.php"><i class="icon-home"></i> HISP Tanzania</a>
 	<div class="nav-collapse">
