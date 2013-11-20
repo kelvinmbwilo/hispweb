@@ -3,7 +3,7 @@ include_once 'includes/connection.php';
 $query = mysql_query("SELECT * FROM team");
 
 ?>
-<h4>Who we are?</h4>	
+<img src="img/team.png" style="" class="img-rounded">
 <div class="row-fluid inner-div1">
     <?php 
     while ($row = mysql_fetch_array($query)) {

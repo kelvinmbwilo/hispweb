@@ -22,12 +22,12 @@
     <body>
         <div class="row-fluid">
             <header>
-                <div class="row-fluid" style="background-image:url(img/boo.png)">
+                <div class="row-fluid" style="background-color: #428CC0">
                     <div class="span3">
                         <img src="../img/hisp1.png" style="" class="visible-desktop visible-tablet pull-left">
                     </div>
                     <div class="span6">
-                        <img src="../img/logo.png" style="height: 100px; width: 100%">
+                        
 <!--                       <h4>Health Information System Program</h4>
                             <form class="navbar-form form-search pull-right">
                             <style>

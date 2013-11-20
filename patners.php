@@ -1,5 +1,5 @@
 <div class="container-fluid">
-<h4 class="title"><span>Partners</span></h4>
+<h4 class="title" style="font-family: 'August Sans';"><span>PARTNERS</span></h4>
 <div id="clients" class="carousel slide">
 		<div class="carousel-inner">
 		<div class="item">

@@ -6,23 +6,23 @@ $query = mysql_query("SELECT * FROM resource ORDER BY upload_date DESC");
     .reso{
         padding: 5px;
         margin-bottom: 5px;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         border-bottom-left-radius: 10px; 
-        -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-        -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     }
 </style>
 
 
-<div class="row-fluid" style="font-size: 0.8em;font-style: italic">
-    <h1><img src="img/resource.png"> </i> </h1>
+<div class="row-fluid" >
+    <img src="img/resource.png" style="" class="img-rounded">
     <div class="row-fluid inner-div">
     <?php 
     while ($row = mysql_fetch_array($query)) {
       ?>
-    <div class="row-fluid reso">
-       <a href="#"> <i class="icon-file-text-alt"></i> <?php echo $row['title'] ?>
+    <div class="row-fluid reso text-left" style="font-size: 1em;">
+        <a href="#" style='font:13px Arial, tahoma, sans-serif;font-size: 14px;color: rgb(51, 51, 51);'> <i class="icon-file-text-alt"></i> <?php echo $row['title'] ?>
         </a>
     </div>
        <?php

@@ -1,11 +1,9 @@
-<div class="container">
-			
-	         
+
      <!-- start header here-->
 	<header>
 		<div id="fdw">
 				<!--nav-->
-                    <nav class="visible-desktop visible-tablet" style="padding-left: 20px">
+                    <nav class="visible-desktop" style="">
                         <ul>
                             <li class="current"><a href="#"><i class="icon-home"></i> Home</a></li>
                             <li>
@@ -49,15 +47,17 @@
                             <li><a href="#">contact</a></li>
                         </ul>
                     </nav>
-		</div><!-- end fdw -->
-	</header><!-- end header -->
+		</div> 
+            <!--end fdw--> 
+	</header> 
+     <!--end header--> 
     
-        <div class="navbar visible-phone">
+        <div class="navbar navbar-fixed-top row-fluid navbar-inverse visible-phone">
 <div class="navbar-inner">
-    <a class="brand" href="index.php">HISP Tanzania</a>
+    <a class="brand" href="index.php"><i class="icon-home"></i> HISP Tanzania</a>
 	<div class="nav-collapse">
                 
-		<ul id="topMenu" class="nav pull-right" style="padding-top: ">
+		<ul id="topMenu" class="nav pull-right">
                     <li class="active">
                     </li>
                     <li><a href="about_us.php"><b>Home</b></a></li>
@@ -66,7 +66,7 @@
                         <b>About Us</b>
                         <b class="caret"></b>
                         </a>
-                        <ul class="dropdown-menu" style="width:300px">
+                        <ul class="dropdown-menu">
                             <li><a href="#">Vision & Mission</a></li>
                             <li><a href="#">HISP Network </a></li>
                             <li><a href="#">HISP Philosophy</a></li>
@@ -77,7 +77,7 @@
                         <b>Core Activities</b>
                         <b class="caret"></b>
                         </a>
-                        <ul class="dropdown-menu" style="width:300px">
+                        <ul class="dropdown-menu">
                             <li><a href="#">Software Development</a></li>
                             <li><a href="#">Training</a></li>
                             <li><a href="#">Datasets Revision</a></li>
@@ -88,7 +88,7 @@
                         <b>Projects</b>
                         <b class="caret"></b>
                         </a>
-                        <ul class="dropdown-menu" style="width:300px">
+                        <ul class="dropdown-menu">
                             <li><a href="#">Projects</a></li>
                             <li><a href="#">HIMS datawarehouse</a></li>
                         </ul>
@@ -98,7 +98,7 @@
                         <b>Resource Center</b>
                         <b class="caret"></b>
                         </a>
-                        <ul class="dropdown-menu" style="width:300px">
+                        <ul class="dropdown-menu">
                             <li><a href="#">Presentations </a></li>
                             <li><a href="#">Publications</a></li>
                             <li><a href="#">Manuals</a></li>
@@ -107,12 +107,7 @@
                         </ul>
                     </li>
                     <li><a href="contact_us.php"><b>Contact Us</b></a></li>
-		 <li class="">
-		</li>
-                <li><a href = "https://www.facebook.com/ExperienceTanzania" title="Visit Our Facebook Page"><img src = "img/fac.png"></a></li>
-                <li><a href = "#" title="Join Us On Twitter"><img src = "img/twi.png"></a></li>
-                <li><a href = "#" title="Visit Our Google Plus Page"><img src = "img/goo.png"></a></li>
-                        
+		 
 		</ul>
 	</div>
 	<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -122,4 +117,4 @@
 	</button>
   </div>
 </div>
-</div>
+

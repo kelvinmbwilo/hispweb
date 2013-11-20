@@ -40,7 +40,9 @@ section, header{
 /* General Demo Style */
 body{
 	font-family: Cambria, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
-	/*background:url(../images/bgnoise_lg.png);*/
+	/*background:url(../img/bak.png);*/
+        background:url(../images/bgnoise_lg.png);
+        /*background-repeat: no-repeat;*/
 	font-weight: 400;
 	font-size: 15px;
 	color: #3a2127;
@@ -51,9 +53,19 @@ a{
 	text-decoration: none;
 }
 .contentia{
-    background:url(../images/bgnoise_lg.png);
+    /*background:url(../images/bgnoise_lg.png);*/
     /*background:url(../images/pattern.png);*/
+    background-color: #fff;
     /*background:url(../img/boo.png);*/
+    border-top: 0px solid rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+-moz-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+-webkit-background-clip: padding-box;
+  -webkit-border-top-left-radius:  8px;
+     -moz-border-top-right-radius:  8px;
+          border-radius: 8px;
+    
 }
 .container{
 	width: 100%;
