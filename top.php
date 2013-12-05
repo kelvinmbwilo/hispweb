@@ -3,26 +3,26 @@
 	<header>
 		<div id="fdw">
 				<!--nav-->
-                    <nav class="visible-desktop" style="">
+                  <nav class="visible-desktop" style="">
                         <ul>
-                            <li class="current"><a href="#"><i class="icon-home"></i> Home</a></li>
+                            <li class="current"><a href="./"><i class="icon-home"></i> Home</a></li>
                             <li>
                                 <a href="#">About Us<span class="arrow"></span></a>
                                 <ul style="display: none;" class="sub_menu">
                                     <li class="arrow_top"></li>
                                     <li><a href="about_us.php">About</a></li>
-                                    <li><a href="#">Vision & Mission</a></li>
-                                    <li><a href="#">HISP Network </a></li>
-                                    <li><a href="#">HISP Philosophy</a></li>
+                                    <li><a href="mission.php">Vision & Mission</a></li>
+                                    <li><a href="hisp_network.php">HISP Network </a></li>
+                                    <li><a href="hisp_philosophy.php">HISP Philosophy</a></li>
                                 </ul>
                             </li>
                             <li>
                                 <a href="#">Core Activities<span class="arrow"></span></a>
                                 <ul style="display: none;" class="sub_menu">
                                     <li class="arrow_top"></li>
-                                    <li><a href="#">Software Development</a></li>
-                                    <li><a href="#">Training</a></li>
-                                    <li><a href="#">Datasets Revision</a></li>
+                                    <li><a href="software_dev.php">Software Development</a></li>
+                                    <li><a href="training.php">Training</a></li>
+                                    <li><a href="dataset.php">Datasets Revision</a></li>
                                 </ul>
                             </li>
                             <li>
@@ -37,11 +37,11 @@
                                 <a href="#">Resource Center<span class="arrow"></span></a>
                                 <ul style="display: none;" class="sub_menu">
                                     <li class="arrow_top"></li>
-                                    <li><a href="#">Presentations </a></li>
-                                    <li><a href="#">Publications</a></li>
-                                    <li><a href="#">Manuals</a></li>
-                                    <li><a href="#">Documentations</a></li>
-                                    <li><a href="#">Reports</a></li>
+                                    <li><a href="resources.php?rtype=Presentation">Presentations </a></li>
+                                    <li><a href="resources.php?rtype=Publications">Publications</a></li>
+                                    <li><a href="resources.php?rtype=Manuals">Manuals</a></li>
+                                    <li><a href="resources.php?rtype=Documentations">Documentations</a></li>
+                                    <li><a href="resources.php?rtype=Reports">Reports</a></li>
                                 </ul>
                             </li>
                             <li><a href="#">Team Members</a></li>
