@@ -5,18 +5,18 @@
 			<div class="span4 text-left">
 				<h5>USEFUL LINKS</h5>
 				<a href="#">MOHSW</a>
-				<a href="#">JAICA</a> 
+				<a href="#">JICA</a> 
 				<a href="#">OSLO UNIVERSITY</a> 
 				<a href="#">MUHAS</a>  
 				<a href="#">IFAKARA HEALTH INSTITUTE</a>
 			 </div>
 			<div class="span4 text-left">
 				<h5>RESOURCES</h5>
-				<a href="#">DOCUMENTATION</a>  
-				<a href="#">REPORT</a>  
-				<a href="#">PUBLICATION</a>  
-				<a href="#">MANUALS</a> 
-				<a href="#">REPORTS</a>
+				<a href="resources.php?rtype=Documentations">DOCUMENTATION</a>  
+				<a href="resources.php?rtype=Presentation">PRESENTATIONS</a>  
+				<a href="resources.php?rtype=Publications">PUBLICATION</a>  
+				<a href="resources.php?rtype=Manuals">MANUALS</a> 
+				<a href="resources.php?rtype=Reports">REPORTS</a>
 			 </div>
 			
 			<div id="socialMedia" class="span4 pull-right text-left">
@@ -35,7 +35,53 @@
                                       </address>
 			 </div> 
 		 </div>
-            <!--<p class="pull-right">&copy; HISP Tanzania <?php // echo date("Y") ?></p>-->
+            <p class="pull-right"><a href="#" id="adminlogin" class="adminlogin">Admin</a></p>
 	</div><!-- Container End -->
 	</div>
-	
+<script>
+$(document).ready(function(){
+   $("#adminlogin").click(function(){
+         var modal = "";
+                modal +="<div id='addUser' class='modal hide fade' tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden='false'>";
+                modal += "<div class='modal-header'>";
+                modal += "<button type='button' class='close' data-dismiss='modal' aria-hidden='true'>&times;</button>";
+                modal += "<h3>Private Area Login</h3>";
+                modal += "</div>";
+                modal += "<div class='modal-body'>";
+                modal += "<form>";
+                modal +="<p>Username: <input type='text' placehoder='Username' name='email' /></p>";
+                modal +="<p>Password: <input type='password' placehoder='Password' name='pass' /></p>";
+                modal +="<p id='errorarea' style='color:red'><p>";
+                modal += "</div>";
+                modal += "<div class='modal-footer'>";
+                //modal += "<a href='#' id='closemodal' class='btn' data-dismiss='modal' aria-hidden='true'>Cancel</a>";
+                modal += "<a href='#'  class='btn btn-primary' id='closemodal'>Login</a>"; 
+                modal += "</div>";
+                modal += "</form>";
+                modal += "</div>";
+                $("body").append(modal);
+                $("#addUser input[type=text]").focus(function(){
+                    $("#addUser #errorarea").empty().hide();
+                });
+                $('#addUser').modal("show");
+                $("#closemodal").click(function(){
+                    $("#addUser #errorarea").empty().hide();
+                     if($("#addUser input[type=text]").val() === ""){
+                         alert("please fill all field");
+                     }else{
+                     var email = $("#addUser input[name=email]").val();
+                     var pass = $("#addUser input[name=pass]").val();
+                     $.post("includes/form_processor.php?page=login",{email:email,pass:pass},function(data){
+                         //alert(data);
+                         if(data ==="success"){
+                             window.location.assign("admin/");
+                         }else{
+                         $("#addUser #errorarea").append(data).show("slow");
+                         
+                         }
+                    });
+                     }
+                });
+    }); 
+});
+</script>

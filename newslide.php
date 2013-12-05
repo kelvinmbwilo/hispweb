@@ -7,7 +7,7 @@ $query1 = mysql_query("SELECT * FROM news_event ORDER BY added_time DESC LIMIT 5
    
 </style>
 <img src="img/news.png" style="" class="img-rounded">
-<div id="myCarousel1" class="carousel slide" style="font-family:cursive; line-height:22px ;color:#255;text-shadow: 0.5px 0.5px #000000;">
+<div id="myCarousel1" class="carousel slide" style="font-family:cursive; line-height:22px ;color:#255;">
   
   <!-- Carousel items -->
   <div class="carousel-inner" style="max-height: 150px">

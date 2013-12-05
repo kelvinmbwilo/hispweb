@@ -1,3 +1,9 @@
+<?php 
+session_start();
+if(!isset($_SESSION['user'])){
+    header("location:../");
+}
+?>
 <!DOCTYPE html>
 <html>
     <title>Demo Drop Down Responsive Menu with CSS/jQuery</title>

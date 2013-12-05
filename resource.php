@@ -22,7 +22,7 @@ $query = mysql_query("SELECT * FROM resource ORDER BY upload_date DESC");
     while ($row = mysql_fetch_array($query)) {
       ?>
     <div class="row-fluid reso text-left" style="font-size: 1em;">
-        <a href="uploads/<?php echo $row['file'] ?>" style='font-family:cursive;font-size: 14px;color: #255;text-shadow: 0.5px 0.5px #000000;'> <i class="icon-file-text-alt"></i> <?php echo $row['title'] ?>
+        <a href="uploads/<?php echo $row['file'] ?>" style='font-family:cursive;font-size: 14px;color: #255;'> <i class="icon-file-text-alt"></i> <?php echo $row['title'] ?>
         </a>
     </div>
        <?php

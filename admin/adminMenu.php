@@ -79,7 +79,7 @@
 
                  <div class="accordion-group">  
                     <div class="accordion-heading" id="allall">  
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#colstaff" id="current"><i class="icon-off"></i> Logout <i class="icon icon-chevron-down pull-right"></i></a>  
+                        <a class="accordion-toggle" data-parent="#accordion2" href="logout.php"><i class="icon-off"></i> Logout <i class="icon icon-chevron-down pull-right"></i></a>  
                     </div>  
                     
                 </div>
