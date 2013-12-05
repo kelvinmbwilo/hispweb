@@ -44,9 +44,10 @@
                                     <li><a href="resources.php?rtype=Reports">Reports</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">Team Members</a></li>
-                            <li><a href="#">contact</a></li>
+                            <li><a href="team_members.php">Team Members</a></li>
+                            <li><a href="contact_us.php">contact</a></li>
                         </ul>
+                      
                     </nav>
 		</div> 
             <!--end fdw--> 

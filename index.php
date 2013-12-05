@@ -4,6 +4,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="google-translate-customization" content="ac3ddf6dddf90b05-953e4d264d9bced8-gc1fa49da042f1b78-17">
     <link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/demo.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
@@ -101,9 +102,15 @@ $(function(){
                                      <button type="submit" class="btn btn-primary" title="search" id="search-submit"><i class="icon-search icon-white"></i></button>
                                    </div>
                          </form>-->
+
                     </div>
                     <div class="span3" style="background-color:">
                         <img src="img/udsm.png" style="" class="visible-desktop visible-tablet pull-right">
+                        <div id="google_translate_element" class="pull-right btn btn-mini btn-success"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, multilanguagePage: true}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
                     </div>
                 </div> 
 		

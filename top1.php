@@ -21,6 +21,11 @@
                     </div>
                     <div class="span3" style="background-color:">
                         <img src="img/udsm.png" style="" class="visible-desktop visible-tablet pull-right">
+                        <div id="google_translate_element" class="pull-right btn btn-mini btn-success"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, multilanguagePage: true}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
                     </div>
                 </div> 
 		
@@ -73,11 +78,13 @@
                                     <li><a href="resources.php?rtype=Reports">Reports</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">Team Members</a></li>
-                            <li><a href="#">contact</a></li>
+                            <li><a href="team_members.php">Team Members</a></li>
+                            <li><a href="contact_us.php">contact</a></li>
                         </ul>
+                        
                     </nav>
 		</div> 
+            
             <!--end fdw--> 
 	</header> 
      <!--end header--> 

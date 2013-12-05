@@ -111,7 +111,7 @@ $(function(){
                                echo "<td>$co</td>";
                                echo "<td>{$row['title']}</td>";
                                echo "<td><a href='uploads/{$row['file']}'<i class='icon-download-alt'></i></td>";
-                               echo "<tr>";
+                               echo "</tr>";
                                $co++;
                             }
                             

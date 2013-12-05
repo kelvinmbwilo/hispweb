@@ -15,14 +15,14 @@ $query = mysql_query("SELECT * FROM resource ORDER BY upload_date DESC");
 </style>
 
 
-<div class="row-fluid" >
+<div class="row-fluid" style="padding-bottom: 8px">
     <img src="img/resource.png" style="" class="img-rounded">
     <div class="row-fluid inner-div">
     <?php 
     while ($row = mysql_fetch_array($query)) {
       ?>
     <div class="row-fluid reso text-left" style="font-size: 1em;">
-        <a href="#" style='font:13px Arial, tahoma, sans-serif;font-size: 14px;color: rgb(51, 51, 51);'> <i class="icon-file-text-alt"></i> <?php echo $row['title'] ?>
+        <a href="uploads/<?php echo $row['file'] ?>" style='font:13px Arial, tahoma, sans-serif;font-size: 14px;color: rgb(51, 51, 51);'> <i class="icon-file-text-alt"></i> <?php echo $row['title'] ?>
         </a>
     </div>
        <?php

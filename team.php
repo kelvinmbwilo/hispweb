@@ -11,7 +11,7 @@ $query = mysql_query("SELECT * FROM team");
     <div class="row-fluid reso">
         <img src="uploads/team/<?php echo $row['image'] ?>" class="img-rounded pull-left" style="height: 70px;width: 70px;padding-right: 8px" >
         <a href="#" style="color: #3e2626">
-           <?php echo$row['titl'].". ". $row['fname']." ".$row['mname']. " ".$row['lname'] ?>
+           <?php echo $row['titl'].". ". $row['fname']." ".$row['mname']. " ".$row['lname'] ?>
         </a>
         <p style="padding-top: 20px"><?php echo $row['project_title'] ?></p>
     </div>

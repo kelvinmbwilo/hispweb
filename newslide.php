@@ -18,6 +18,7 @@ $query1 = mysql_query("SELECT * FROM news_event ORDER BY added_time DESC LIMIT 5
              echo "<div class='active item'>";
              ?>
       <h4 style="color: #003399"><a href="#" id="<?php $row['id'] ?>" class="viewnews"><?php echo $row['title'] ?></a></h4>
+     
       <p id="discr"><?php echo ($row['image']=="")?"":"<img src='uploads/news/{$row['image']}' style='height:60px;width:60px; padding-right:2px' class='pull-left img-rounded'>"; echo $row['discr'] ?></p>
       <?php
              echo "</div>";
@@ -36,7 +37,7 @@ $query1 = mysql_query("SELECT * FROM news_event ORDER BY added_time DESC LIMIT 5
           ?>
     
   </div>
-  <a href="news.php" class="btn btn-mini btn-info pull-right">All News</a>
+  <a href="news.php" class="btn btn-mini btn-info pull-right" style="padding-top: 5px;">All News</a>
 <!--   Carousel nav 
   <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
   <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>-->

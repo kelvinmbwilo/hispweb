@@ -1,5 +1,9 @@
 <div class="container-fluid">
-<h4 class="title" style="font-family: 'August Sans';"><span>PARTNERS</span></h4>
+<h4 class="title" style="font-family: 'August Sans';"><span>PARTNERS</span> <!-- hitwebcounter Code START -->
+<a href="http://www.hitwebcounter.com/" target="_blank" class="pull-right" style="padding: 5px">
+visitors: <img src="http://hitwebcounter.com/counter/counter.php?page=5152475&style=0002&nbdigits=5&type=ip&initCount=0" title="Track Your Stats" Alt="Track Your Stats"   border="0" >
+</a> </h4>
+ 
 <div id="clients" class="carousel slide">
 		<div class="carousel-inner">
 		<div class="item">

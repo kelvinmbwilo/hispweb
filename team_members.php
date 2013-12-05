@@ -89,23 +89,23 @@ $(function(){
                 <div class="span9">
                     <div class="bs-docs-example1 lead text-left" style="font-size: 17px;line-height: 23px">
                         
-                        <h3  class="text-warning text-center"><?php echo $_GET['rtype'] ?></h3>
-                        <table class="table table-bordered table-condensed">
-                            <tr>
-                                <td>SNO</td>
-                                <td><?php echo strtoupper($_GET['rtype']) ?> TITLE</td>
-                                <td>ACTION</td>
-                            </tr>
+                        <h3  class="text-warning text-center">TEAM MEMBERS</h3>
+                      
                             <?php 
                             $co = 1;
                             include_once 'includes/connection.php';
-                            $query = mysql_query("SELECT * FROM resource WHERE type='{$_GET['rtype']}'");
+                            $query = mysql_query("SELECT * FROM team");
                             while ($row = mysql_fetch_array($query)) {
-                               echo "<tr>";
-                               echo "<td>$co</td>";
-                               echo "<td>{$row['title']}</td>";
-                               echo "<td><a href='uploads/{$row['file']}'<i class='icon-download-alt'></i></td>";
-                               echo "<tr>";
+                               echo "<div class='row-fluid' style='padding:10px'>";
+                               echo "<img src='uploads/team/{$row['image']}' style='height:120px;width:150px; padding-right:9px;' class='img-rounded pull-left'>";
+                               ?>
+                                <a href="#" style="color: #3e2626">
+                                    <?php echo $row['titl'].". ". $row['fname']." ".$row['mname']. " ".$row['lname'] ?>
+                                 </a>
+                                 <p style="padding-top: 20px"><?php echo $row['project_title'] ?></p>
+
+                               <?php
+                               echo "</div>";
                                $co++;
                             }
                             ?>
