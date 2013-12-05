@@ -3,19 +3,22 @@ include_once 'includes/connection.php';
 $query = mysql_query("SELECT * FROM news_event ORDER BY added_time DESC LIMIT 5");
 $query1 = mysql_query("SELECT * FROM news_event ORDER BY added_time DESC LIMIT 5");
 ?>
+<style>
+   
+</style>
 <img src="img/news.png" style="" class="img-rounded">
 <div id="myCarousel1" class="carousel slide" >
   
   <!-- Carousel items -->
-  <div class="carousel-inner">
+  <div class="carousel-inner" style="max-height: 150px">
       <?php
        $k = 0;
       while ($row = mysql_fetch_array($query)) { 
          if($k == 0 ){
              echo "<div class='active item'>";
              ?>
-      <h4 style="color: #003399"><?php echo $row['title'] ?></h4>
-      <p style="font-family: 'August Sans'; font-weight: 200;color: #000000"><?php echo $row['discr'] ?></p>
+      <h4 style="color: #003399"><a href="#" id="<?php $row['id'] ?>" class="viewnews"><?php echo $row['title'] ?></a></h4>
+      <p id="discr"><?php echo ($row['image']=="")?"":"<img src='uploads/news/{$row['image']}' style='height:60px;width:60px; padding-right:2px' class='pull-left img-rounded'>"; echo $row['discr'] ?></p>
       <?php
              echo "</div>";
              $k++;
@@ -23,8 +26,8 @@ $query1 = mysql_query("SELECT * FROM news_event ORDER BY added_time DESC LIMIT 5
            else {
              echo "<div class='item'>";
              ?>
-      <h4 style="color: #003399"><?php echo $row['title'] ?></h4>
-      <p><span  style="font-family: 'August Sans'!important; font-weight: 200;color: #000000;line-height: 27px"><?php echo $row['discr'] ?></span></p>
+      <h4 style="color: #003399"><a href="#" id="<?php $row['id'] ?>" class="viewnews"><?php echo $row['title'] ?></a></h4>
+      <p id="discr"><?php echo ($row['image']=="")?"":"<img src='uploads/news/{$row['image']}' style='height:60px;width:60px; padding-right:2px' class='pull-left img-rounded'>"; echo $row['discr'] ?></p>
       <?php
                echo "</div>";
                $k++;
@@ -33,16 +36,39 @@ $query1 = mysql_query("SELECT * FROM news_event ORDER BY added_time DESC LIMIT 5
           ?>
     
   </div>
-  
+  <a href="news.php" class="btn btn-mini btn-info pull-right">All News</a>
 <!--   Carousel nav 
   <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
   <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>-->
 </div>
+
 <script>
     $(document).ready(function(){
         $('#myCarousel1').carousel({
           interval: 4000
-        })
-     })
+        });
+    
+    $(".viewnews").click(function(){
+         
+        var modal = "";
+                modal +="<div id='addUser' class='modal hide fade' tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden='false'>";
+                modal += "<div class='modal-header'>";
+                modal += "<button type='button' class='close' data-dismiss='modal' aria-hidden='true'>&times;</button>";
+                modal += "<h3>"+$(this).text()+"</h3>";
+                modal += "</div>";
+                modal += "<div class='modal-body lead'>"+$(this).parent().parent().find("p").html()+$(this).parent().parent().find("p").text();
+                modal += "</div>";
+                $("body").append(modal);
+                $('#addUser').modal("show");
+                
+                $("#close").click(function(){
+                    $('#addUser').modal("hide");
+                })
+                $('#addUser').on('hidden', function () {
+                    $('#addUser').remove();
+                });
+              
+});
+     });
 
 </script>

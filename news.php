@@ -87,15 +87,22 @@ $(function(){
         ?>
             <div class="row-fluid ">
                 <div class="span9">
-                    <div class="bs-docs-example lead text-left" style="font-size: 17px;line-height: 27px">
-                        <p>
-                            The Health Information System Programme (HISP) is a global south-south-north collaborative network aiming to improve health care in developing countries through research on and implementation of Health Information Systems. The network has since 1994 been involved in many countries in the "Global South", and at the global level is coordinated by the Global Infrastructures Research Group at Department of Informatics, University of Oslo.
-                            
-                        </p><p>
-                        In Tanzania, HISP is located and coordinated within Department of Computer Science and Engineering of the University of Dar-es-salaam (UDSM) since 2002. The HISP Tanzania works closely in collaboration with the Tanzania Ministry of Health and Social Welfare (MoHSW) and other various local and international partners. Our aims are to support the Government of Tanzania to design, develop and implement sustainable health information systems through application of best approaches and use of flexible and open ended technologies for efficient health data collection, processing, and use of information for action. At the core of the HISP Tanzania is the development and implementation of the open source DHIS2 software and the use of this application to strengthen the health information system in Tanzania. (Visit the DHIS web site for more on the software: www.Dhis2.org.
-                         </p><p>
-                        The majority of activities for HISP Tanzania have been carried out in Pwani Region (a test region). The HISP Tanzania office for DHIS2 software development is located within UDSM Julius Nyerere Mlimani Campus in Dar es Salaam. We also provide technical support to various implementing partners in Tanzania including Clinton Health Access Initiative (CHAI) and Ifakara Health Institute (IHI) to implement and support the DHIS 2 in Mtwara and Lindi regions supported by CHAI and 27 SPD districts funded by IHI. Within the test region (Pwani), HISP Tanzania activities are carried out according to the national MOHSW action plan, as specified in the M&E Strengthening Initiative "Combined Plan" of 26th October, 2010. We have rolled out DHIS2 and new HMIS into Six Regions (Pwani, Dar es Salaam, Dodoma, Lindi, Mtwara and Shinyanga).
-                       </p>
+                    <div class="bs-docs-example1 lead text-left" style="font-size: 17px;line-height: 23px">
+                        
+                        <h3  class="text-warning text-center">NEWS AND EVENT</h3>
+                        
+                            <?php 
+                            $co = 1;
+                            include_once 'includes/connection.php';
+                            $query = mysql_query("SELECT * FROM news_event ORDER BY added_time");
+                            while ($row = mysql_fetch_array($query)) {
+                               echo "<div class='row-fluid'>";
+                              echo ($row['image']=="")?"":"<img src='uploads/news/{$row['image']}' style='height:60px;width:60px; padding-right:2px' class='pull-left img-rounded'>";
+                               echo "<a href='#' class='viewonenew'>{$row['title']}</a><p class='newscontents'>{$row['discr']}</p></div>";
+                               $co++;
+                            }
+                            ?>
+                        </table>
                     </div>
                     
                 </div>
@@ -116,3 +123,35 @@ $(function(){
             </div>
     </body>
 </html>
+<script>
+$(document).ready(function(){
+    $(".viewonenews").click(function(){
+         
+        var modal = "";
+                modal +="<div id='addUser' class='modal hide fade' tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden='false'>";
+                modal += "<div class='modal-header'>";
+                modal += "<button type='button' class='close' data-dismiss='modal' aria-hidden='true'>&times;</button>";
+                modal += "<h3>"+$(this).text()+"</h3>";
+                modal += "</div>";
+                modal += "<div class='modal-body'>";
+                modal += "</div>";
+                $("body").append(modal);
+                $('#addUser').modal("show");
+                
+                $("#close").click(function(){
+                    $('#addUser').modal("hide");
+                })
+                $('#addUser').on('hidden', function () {
+                    $('#addUser').remove();
+                });
+              
+});
+});
+</script>
+<?php
+
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+?>

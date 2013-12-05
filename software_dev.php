@@ -87,15 +87,32 @@ $(function(){
         ?>
             <div class="row-fluid ">
                 <div class="span9">
-                    <div class="bs-docs-example lead text-left" style="font-size: 17px;line-height: 27px">
+                    <div class="bs-docs-example1 lead text-left" style="font-size: 17px;line-height: 27px">
+                        <h3  class="text-warning text-center">Software development,Systems Integration and Support</h3>
                         <p>
-                            The Health Information System Programme (HISP) is a global south-south-north collaborative network aiming to improve health care in developing countries through research on and implementation of Health Information Systems. The network has since 1994 been involved in many countries in the "Global South", and at the global level is coordinated by the Global Infrastructures Research Group at Department of Informatics, University of Oslo.
-                            
-                        </p><p>
-                        In Tanzania, HISP is located and coordinated within Department of Computer Science and Engineering of the University of Dar-es-salaam (UDSM) since 2002. The HISP Tanzania works closely in collaboration with the Tanzania Ministry of Health and Social Welfare (MoHSW) and other various local and international partners. Our aims are to support the Government of Tanzania to design, develop and implement sustainable health information systems through application of best approaches and use of flexible and open ended technologies for efficient health data collection, processing, and use of information for action. At the core of the HISP Tanzania is the development and implementation of the open source DHIS2 software and the use of this application to strengthen the health information system in Tanzania. (Visit the DHIS web site for more on the software: www.Dhis2.org.
-                         </p><p>
-                        The majority of activities for HISP Tanzania have been carried out in Pwani Region (a test region). The HISP Tanzania office for DHIS2 software development is located within UDSM Julius Nyerere Mlimani Campus in Dar es Salaam. We also provide technical support to various implementing partners in Tanzania including Clinton Health Access Initiative (CHAI) and Ifakara Health Institute (IHI) to implement and support the DHIS 2 in Mtwara and Lindi regions supported by CHAI and 27 SPD districts funded by IHI. Within the test region (Pwani), HISP Tanzania activities are carried out according to the national MOHSW action plan, as specified in the M&E Strengthening Initiative "Combined Plan" of 26th October, 2010. We have rolled out DHIS2 and new HMIS into Six Regions (Pwani, Dar es Salaam, Dodoma, Lindi, Mtwara and Shinyanga).
-                       </p>
+                           The software development and integration a continuous activity and is handled by the UDSM/UiO-MOHSW team. The UDSM/UiO-MOHSW team is responsible to Develop District based National data warehouse. The software development and integration work a continuous activity is handled by the UDSM-MOHSW team. The team is responsible to
+                        </p>
+                        <ul style="list-style: disc">
+                            <li>Design database and software for 'rapid rollout' based on existing, but harmonized, data collection tools.</li>
+                            <li>Update software and data warehouse design based on revised tools.</li>
+                            <li>Integrate DHIS with other related applications (e.g. LGMD).</li>
+                            <li>Revise database & software once new registers & tools finalized.</li>
+                        </ul>
+                        <p>
+                       Integration with other computer based application such as Electronic Patient Record systems in hospitals and other facilities is handled through a standardized data interchange platform. This, of course, is depending on the use of open standards also by other computer applications, which will be ensured through the strategic planning process and other computerized data sources; establishing web-based data warehouse, electronic reporting etc. The basic principle underlying the various software applications involved in this work is that first a first customized, stable and useful application is implemented, and thereafter it is continuously further developed and integrated with the patient record systems such as the Care2X, and other systems in place.
+                        </p>
+                        <p>The further development of the district, regional and national levels data warehouse include: </p>
+                        <ol style="list-style: lower-alpha">
+                            <li>
+                                ntegrating other systems and data sources; the extraction and inclusion of data from other data sources such as census data and survey data (DHS) in order to provide denominators and "base lines" data. Electronic Patient Records systems in hospitals and facilities will be integrated in such a way that monthly aggregates (reports) are automatically generated and "loaded" into the DHIS. Data may also be exported to other computer based systems, e.g. exporting relevant data collected from facility/ district levels to specific software used by health programs.
+                            </li>
+                            <li>
+                                Include "real time" web based presentation and analytical functionality; Web-based dashboard for quick access to reports, charts and maps; the inclusion of Geographical Information System (GIS, mapping facilities). A current project with WHO concerns the integration of DHIS with the WHO OpenHealth GIS.
+                            </li>
+                        </ol>
+                        <p>
+                            The UDSM/UiO software team including the MOHSW is in charge of the further development and improving of the DHIS software and related technical aspects at district and national levels.
+                        </p>
                     </div>
                     
                 </div>

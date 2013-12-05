@@ -70,9 +70,17 @@ $(function(){
 <!-- end -->
 </head>
     <body>
+<!--        <section id="bannerSection" style="background:url(img/portfolio.png) no-repeat center center #000;">
+	<div class="container" >	
+		<h1 id="pageTitle"> <small> :<img src="img/log1.png" style="height: 90px" class="img-rounded"></small> 
+		<span class="pull-right toolTipgroup">
+			<a href="#" data-placement="top" data-original-title="Find us on via facebook"><img style="width: 95px"  src="img/logoo.png" alt="facebook" title="facebook"></a>
+			<a href="#" data-placement="top" data-original-title="Find us on via youtube"><img  style="width: 95px" src="img/udsm.png" alt="youtube" title="youtube"></a>
+		</span>
+		</h1>
+	</div>
+</section>-->
         <div style="padding-top: 20px;" class="container">
-            <div class="span1"></div>
-        <div class="span12">
         <div class="row-fluid visible-desktop">
             <header>
                 <div class="row-fluid">
@@ -119,7 +127,7 @@ $(function(){
                         <p>
                             In Tanzania, HISP is located and coordinated within Department of Computer Science and Engineering of the University of Dar-es-salaam (UDSM) since 2002. The HISP Tanzania works closely in collaboration with the Tanzania Ministry of Health and Social Welfare (MoHSW) and other various local and international partners. Our aims are to support the Government of Tanzania to design, develop and implement sustainable health information systems through application of best approaches and use of flexible and open ended technologies for efficient health data collection, processing, and use of information for action. At the core of the HISP Tanzania is the development and implementation of the open source DHIS2 software and the use of this application to strengthen the health information system in Tanzania. (Visit the DHIS web site for more on the software: www.Dhis2.org.
                         </p>
-                        <a href="#"> >> more >></a>
+                        <a href="about_us.php"><small> >> more >></small></a>
                       </div>
                     
                 </div>
@@ -130,10 +138,64 @@ $(function(){
                 </div>
             </div>
                 <div class="row-fluid">
-                    <div class="span12">
+                    <div class="span12" style="padding:20px">
+<!--                        <ul class="thumbnails">
+                            <li class="span4">
+                              <div class="thumbnail">
+                                <?php include 'team.php'; ?>
+                              </div>
+                            </li>
+                            <li class="span4">
+                              <div class="thumbnail">
+                                 <img src="img/project.png" style="" class="img-round">		
+                                        <ul class="nav nav-list text-left" id="projects" >
+                                            <li class="text-center">
+                                                <a href="#" style="color: #0c0a0a">DHIS - District Health Information System<br> <img src="img/dhis.png" style="height: 100px;width: 250px " class="img-circle" />
+                                                    
+                                                </a>
+                                            </li>
+                                            
+                                            <li class="text-center">
+                                                <a href="#" style="color: #0c0a0a">HRHIS - Human Resource for Health Information System<br> <img src="img/hrhis.png" style="height: 100px;width: 250px " class="img-circle" />
+                                                    
+                                                </a>
+                                            </li>
+                                            
+                                        </ul>
+                              </div>
+                                <script>
+                                    $(function(){
+                                        $('#projects').slimScroll({
+                                            height: '270px'
+                                        });
+                                    });
+                                </script>
+                            </li>
+                            <li class="span4">
+                              <div class="thumbnail">
+                                <img src="img/find.png" style="" class="img-rounded">
+                                <address style="font-size: 0.9em" class="text-left">
+                                    <strong> The Coordinator </strong><br>
+                                    HISP<br>
+                                    Department of Computer Science and Engineering<br>
+                                    Ground Floor, Science Workshop Building <br>
+                                    P.O BOX 35062 Dar es Salaam<br>
+                                    TANZANIA - EAST AFRICA<br>
+                                    <abbr title="Phone">P:</abbr> +255-22-2410500/9<br> 
+                                    <abbr title="Mobile"><i class="icon-phone"></i>:</abbr> +255 784 147946 <br>
+
+                                    <a href="mailto: coordinator@hisptanzania.or.tz"> coordinator@hisptanzania.or.tz</a>
+                                  </address>
+                              </div>
+                            </li>
+                          </ul>
+                        
+                        
+                        
+                        -->
                      <section id="scn">
                         <!--<h3 class="title"><span>WELCOME TO EXPERIENCE TANZANIA!</span></h3>-->
-                        <div class="row">
+                        <div class="row-fluid">
                             <div class="span1"></div>
                                 <div class="span3">
                                 <!--<h1 class="text-left"><img src="img/team.png"> </i> </h1>-->
@@ -161,7 +223,16 @@ $(function(){
                                 </div>
                                 </div>
                             <div class="span3">
-                                <img src="img/find.png" style="" class="img-rounded">
+                                <img src="img/find.png" style="" class="img-rounded" id="findimg">
+                                <script>
+                                $(document).ready(function(){
+                                    $("#findimg").hover(function(){
+                                        $(this).attr("src","img/find1.png");
+                                        },function(){
+                                            $(this).attr("src","img/find.png");
+                                        });
+                                });
+                                </script>
                                 <address style="font-size: 0.9em" class="text-left">
                                     <strong> The Coordinator </strong><br>
                                     HISP<br>
@@ -191,8 +262,6 @@ $(function(){
             
         </div>
  <?php include 'footer.php'; ?>
-            </div>
-            <div class="span2"></div>
             </div>
     </body>
 </html>

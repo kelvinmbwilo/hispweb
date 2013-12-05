@@ -41,7 +41,7 @@ section, header{
 body{
 	font-family: Cambria, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
 	/*background:url(../img/bak.png);*/
-        background:url(../images/bgnoise_lg.png);
+        background:url(../img/bodyBg.png);
         /*background-repeat: no-repeat;*/
 	font-weight: 400;
 	font-size: 15px;
@@ -55,7 +55,7 @@ a{
 .contentia{
     /*background:url(../images/bgnoise_lg.png);*/
     /*background:url(../images/pattern.png);*/
-    background-color: #fff;
+    background-color: inherit;
     /*background:url(../img/boo.png);*/
     border-top: 0px solid rgba(0, 0, 0, 0.8);
   -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);

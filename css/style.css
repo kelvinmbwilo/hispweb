@@ -96,6 +96,26 @@ ol.linenums li {
   line-height: 20px;
   text-shadow: 0 1px 0 #fff;
 }
+.bs-docs-example1 {
+  position: relative;
+  margin: 15px 0;
+  padding: 29px 19px 14px;
+  *padding-top: 19px;
+  background-color:transparent;
+  /*border: 1px solid #ddd;*/
+  border: 0px solid rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+-moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+-webkit-background-clip: padding-box;
+  -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+          border-radius: 8px;
+ font-family: 'August Sans';
+ font-size: 14px;
+ line-height: 5px;
+}
+
 
 .bs-docs-example {
   position: relative;
@@ -144,6 +164,10 @@ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
   padding-top: 15px;
 }
 
+ #discr{
+        font-family: 'August Sans';
+        text-shadow: 2px;
+    }
 /* Tweak examples
 ------------------------- */
 .bs-docs-example > p:last-child {

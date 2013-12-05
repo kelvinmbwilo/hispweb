@@ -87,15 +87,23 @@ $(function(){
         ?>
             <div class="row-fluid ">
                 <div class="span9">
-                    <div class="bs-docs-example lead text-left" style="font-size: 17px;line-height: 27px">
+                    <div class="bs-docs-example1 lead text-left" style="font-size: 17px;line-height: 23px">
+                        <h3  class="text-warning text-center">Revisions of Datasets and Indicators, Tools and HMIS</h3>
                         <p>
-                            The Health Information System Programme (HISP) is a global south-south-north collaborative network aiming to improve health care in developing countries through research on and implementation of Health Information Systems. The network has since 1994 been involved in many countries in the "Global South", and at the global level is coordinated by the Global Infrastructures Research Group at Department of Informatics, University of Oslo.
-                            
+                        An indicator set has existed in Tanzania since the 1990s, but this is now seen as being out of date, fragmented and inadequate and needs to be reviewed in conjunction with all relevant stakeholders. Numerous additional program specific data collection tools and routines are in use. There is a need for international best practice standards to be applied to indicator selection as well as to the harmonization of the routine data collection system.
                         </p><p>
-                        In Tanzania, HISP is located and coordinated within Department of Computer Science and Engineering of the University of Dar-es-salaam (UDSM) since 2002. The HISP Tanzania works closely in collaboration with the Tanzania Ministry of Health and Social Welfare (MoHSW) and other various local and international partners. Our aims are to support the Government of Tanzania to design, develop and implement sustainable health information systems through application of best approaches and use of flexible and open ended technologies for efficient health data collection, processing, and use of information for action. At the core of the HISP Tanzania is the development and implementation of the open source DHIS2 software and the use of this application to strengthen the health information system in Tanzania. (Visit the DHIS web site for more on the software: www.Dhis2.org.
-                         </p><p>
-                        The majority of activities for HISP Tanzania have been carried out in Pwani Region (a test region). The HISP Tanzania office for DHIS2 software development is located within UDSM Julius Nyerere Mlimani Campus in Dar es Salaam. We also provide technical support to various implementing partners in Tanzania including Clinton Health Access Initiative (CHAI) and Ifakara Health Institute (IHI) to implement and support the DHIS 2 in Mtwara and Lindi regions supported by CHAI and 27 SPD districts funded by IHI. Within the test region (Pwani), HISP Tanzania activities are carried out according to the national MOHSW action plan, as specified in the M&E Strengthening Initiative "Combined Plan" of 26th October, 2010. We have rolled out DHIS2 and new HMIS into Six Regions (Pwani, Dar es Salaam, Dodoma, Lindi, Mtwara and Shinyanga).
-                       </p>
+                        There is a perceived need for harmonized set of indicators and corresponding data sets and data collection tools and routines, clearly acknowledged by MoH&SW top management, M&E chapter of HSSP III, donors and programs
+                        </p><p>
+                        Revision of data and indicator sets is an ongoing process and is lead by the MOHSW and it also involves working with health programs and other stakeholders. A more formal representative committee discussing and deciding on revisions need to be established.
+                        </p><p>
+                        Aim is to arrive at a situation where a national committee is responsible for the harmonisation of the total array of reporting requirements to the health facilities. Programs and agencies wanting to introduce new data reporting forms will then have to approach this committee in order to get acceptance for additional requirements. Requirements when introducing new data reporting forms will include that they are harmonised within the overall HMIS framework and that no 'double' reporting is accepted.
+                        </p><p>
+                        Initially the DHIS2 rollout will be based on a 'harmonised' compilation of the existing HMIS and vertical program data collection tools, including already revised tools and data sets. This work will be carried out over the initial 5 months of the project in Pwani (Test) region.
+                        </p><p>
+                        During the first 18 months of the project the plan is to conduct a total revision of the paper based data registration, collection and reporting tools used at the facility level, including the MTUHA books and vertical program reporting tools. The aim is to arrive at one consolidated set of tools where the MTUHA /HMIS tools are integrated and shared with the vertical health programs.
+                        </p><p>
+                        The objectives of this component are thus two-fold; 1) revise the tools, and 2) establish a permanent structure overseeing future revisions and additions.
+                        </p>
                     </div>
                     
                 </div>

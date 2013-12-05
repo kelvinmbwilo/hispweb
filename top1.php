@@ -1,28 +1,57 @@
-
-     <!-- start header here-->
+<div class="row-fluid visible-desktop">
+            <header>
+                <div class="row-fluid">
+                    <div class="span3">
+                        <img src="img/logoo.png" style="" class="visible-desktop visible-tablet pull-left">
+                    </div>
+                    <div class="span6 text-center text-info" style="padding-top: 20px">
+                        <img src="img/log1.png" style="" class="img-rounded">
+                       <!--<h3>Health Information System Program</h3>-->
+<!--                            <form class="navbar-form form-search pull-right">
+                            <style>
+                            .ui-autocomplete-loading {
+                                   background: white url('img/ui-anim_basic_16x16.gif') right center no-repeat;
+                           }
+                           </style>
+                                   <div class="input-append">
+                                     <input type="text" class=" search-query" placeholder="Search" id="searchpeople" name="querystring">
+                                     <button type="submit" class="btn btn-primary" title="search" id="search-submit"><i class="icon-search icon-white"></i></button>
+                                   </div>
+                         </form>-->
+                    </div>
+                    <div class="span3" style="background-color:">
+                        <img src="img/udsm.png" style="" class="visible-desktop visible-tablet pull-right">
+                    </div>
+                </div> 
+		
+            </header>  
+        </div>
+        <div class="row-fluid contentia" style="padding-top: 20px;border-radius: 18px">
+            
+        <!-- start header here-->
 	<header>
 		<div id="fdw">
 				<!--nav-->
                     <nav class="visible-desktop" style="">
                         <ul>
-                            <li class="current"><a href="#"><i class="icon-home"></i> Home</a></li>
+                            <li class="current"><a href="./"><i class="icon-home"></i> Home</a></li>
                             <li>
                                 <a href="#">About Us<span class="arrow"></span></a>
                                 <ul style="display: none;" class="sub_menu">
                                     <li class="arrow_top"></li>
                                     <li><a href="about_us.php">About</a></li>
-                                    <li><a href="#">Vision & Mission</a></li>
-                                    <li><a href="#">HISP Network </a></li>
-                                    <li><a href="#">HISP Philosophy</a></li>
+                                    <li><a href="mission.php">Vision & Mission</a></li>
+                                    <li><a href="hisp_network.php">HISP Network </a></li>
+                                    <li><a href="hisp_philosophy.php">HISP Philosophy</a></li>
                                 </ul>
                             </li>
                             <li>
                                 <a href="#">Core Activities<span class="arrow"></span></a>
                                 <ul style="display: none;" class="sub_menu">
                                     <li class="arrow_top"></li>
-                                    <li><a href="#">Software Development</a></li>
-                                    <li><a href="#">Training</a></li>
-                                    <li><a href="#">Datasets Revision</a></li>
+                                    <li><a href="software_dev.php">Software Development</a></li>
+                                    <li><a href="training.php">Training</a></li>
+                                    <li><a href="dataset.php">Datasets Revision</a></li>
                                 </ul>
                             </li>
                             <li>
@@ -37,11 +66,11 @@
                                 <a href="#">Resource Center<span class="arrow"></span></a>
                                 <ul style="display: none;" class="sub_menu">
                                     <li class="arrow_top"></li>
-                                    <li><a href="#">Presentations </a></li>
-                                    <li><a href="#">Publications</a></li>
-                                    <li><a href="#">Manuals</a></li>
-                                    <li><a href="#">Documentations</a></li>
-                                    <li><a href="#">Reports</a></li>
+                                    <li><a href="resources.php?rtype=Presentation">Presentations </a></li>
+                                    <li><a href="resources.php?rtype=Publications">Publications</a></li>
+                                    <li><a href="resources.php?rtype=Manuals">Manuals</a></li>
+                                    <li><a href="resources.php?rtype=Documentations">Documentations</a></li>
+                                    <li><a href="resources.php?rtype=Reports">Reports</a></li>
                                 </ul>
                             </li>
                             <li><a href="#">Team Members</a></li>

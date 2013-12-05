@@ -87,15 +87,24 @@ $(function(){
         ?>
             <div class="row-fluid ">
                 <div class="span9">
-                    <div class="bs-docs-example lead text-left" style="font-size: 17px;line-height: 27px">
+                    <div class="bs-docs-example1 lead text-left" style="font-size: 17px;line-height: 27px">
+                        <h3  class="text-warning text-center">Vision</h3>
                         <p>
-                            The Health Information System Programme (HISP) is a global south-south-north collaborative network aiming to improve health care in developing countries through research on and implementation of Health Information Systems. The network has since 1994 been involved in many countries in the "Global South", and at the global level is coordinated by the Global Infrastructures Research Group at Department of Informatics, University of Oslo.
-                            
-                        </p><p>
-                        In Tanzania, HISP is located and coordinated within Department of Computer Science and Engineering of the University of Dar-es-salaam (UDSM) since 2002. The HISP Tanzania works closely in collaboration with the Tanzania Ministry of Health and Social Welfare (MoHSW) and other various local and international partners. Our aims are to support the Government of Tanzania to design, develop and implement sustainable health information systems through application of best approaches and use of flexible and open ended technologies for efficient health data collection, processing, and use of information for action. At the core of the HISP Tanzania is the development and implementation of the open source DHIS2 software and the use of this application to strengthen the health information system in Tanzania. (Visit the DHIS web site for more on the software: www.Dhis2.org.
-                         </p><p>
-                        The majority of activities for HISP Tanzania have been carried out in Pwani Region (a test region). The HISP Tanzania office for DHIS2 software development is located within UDSM Julius Nyerere Mlimani Campus in Dar es Salaam. We also provide technical support to various implementing partners in Tanzania including Clinton Health Access Initiative (CHAI) and Ifakara Health Institute (IHI) to implement and support the DHIS 2 in Mtwara and Lindi regions supported by CHAI and 27 SPD districts funded by IHI. Within the test region (Pwani), HISP Tanzania activities are carried out according to the national MOHSW action plan, as specified in the M&E Strengthening Initiative "Combined Plan" of 26th October, 2010. We have rolled out DHIS2 and new HMIS into Six Regions (Pwani, Dar es Salaam, Dodoma, Lindi, Mtwara and Shinyanga).
-                       </p>
+                           Development and implementation of sustainable and integrated computer based health information systems in Tanzania that empower communities, health workers and decision makers to improve the coverage, quality and efficiency of health services.
+                        </p>
+                        <h3 class="text-warning text-center">Mission</h3><p>
+                       To adopt a broad based developmental approach to capacity building and support of communities, health care workers and decision makers for improving health information systems and use of information for action.</p><p>
+                         </p>
+                         <p>In partnership with MOHSW and various implementing partners, we encourage and support:</p>
+                         <ul style="list-style: disc">
+                             <li>Flexible standards and integration of health management information systems.</li>
+                             <li>Development and nurturing strong information culture at all level of the health system</li>
+                             <li>Advocate use of free and open source software to support information processing</li>
+                             <li>Support and promote participatory approaches in the health information systems reform process.</li>
+                             <li>Promote human resources development as a key to sustainable health information system.</li>
+                             <li>Encourage and promote local and international partnership as a pipeline for synergies.</li>
+                             
+                         </ul>
                     </div>
                     
                 </div>

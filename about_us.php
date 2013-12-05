@@ -20,51 +20,13 @@
     <script type="text/javascript" src="js/jquery.slimscroll.js"></script>
     <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
     <script type="text/javascript" src="jqueryui/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
     <script src="js/jquery-tweetscroll.js"></script> <!-- jQuery tweetscroll plugin -->
     <script src="js/caroufredsel-carousel.js"></script><!-- CarouFredSel carousel plugin -->
 <!--  javaScript -->
 <script>  
 <!--  // building select nav for mobile width only -->
-$(function(){
-	// building select menu
-	$('<select />').appendTo('nav');
 
-	// building an option for select menu
-	$('<option />', {
-		'selected': 'selected',
-		'value' : '',
-		'text': 'Choise Page...'
-	}).appendTo('nav select');
-
-	$('nav ul li a').each(function(){
-		var target = $(this);
-
-		$('<option />', {
-			'value' : target.attr('href'),
-			'text': target.text()
-		}).appendTo('nav select');
-
-	});
-
-	// on clicking on link
-	$('nav select').on('change',function(){
-		window.location = $(this).find('option:selected').val();
-	});
-});
-
-// show and hide sub menu
-$(function(){
-	$('nav ul li').hover(
-		function () {
-			//show its submenu
-			$('ul', this).slideDown(150);
-		}, 
-		function () {
-			//hide its submenu
-			$('ul', this).slideUp(150);			
-		}
-	);
-});
 //end
 </script>
 <!-- end -->
@@ -92,7 +54,7 @@ $(function(){
                             The Health Information System Programme (HISP) is a global south-south-north collaborative network aiming to improve health care in developing countries through research on and implementation of Health Information Systems. The network has since 1994 been involved in many countries in the "Global South", and at the global level is coordinated by the Global Infrastructures Research Group at Department of Informatics, University of Oslo.
                             
                         </p><p>
-                        In Tanzania, HISP is located and coordinated within Department of Computer Science and Engineering of the University of Dar-es-salaam (UDSM) since 2002. The HISP Tanzania works closely in collaboration with the Tanzania Ministry of Health and Social Welfare (MoHSW) and other various local and international partners. Our aims are to support the Government of Tanzania to design, develop and implement sustainable health information systems through application of best approaches and use of flexible and open ended technologies for efficient health data collection, processing, and use of information for action. At the core of the HISP Tanzania is the development and implementation of the open source DHIS2 software and the use of this application to strengthen the health information system in Tanzania. (Visit the DHIS web site for more on the software: www.Dhis2.org.
+                            In Tanzania, HISP is located and coordinated within Department of Computer Science and Engineering of the University of Dar-es-salaam (UDSM) since 2002. The HISP Tanzania works closely in collaboration with the Tanzania Ministry of Health and Social Welfare (MoHSW) and other various local and international partners. Our aims are to support the Government of Tanzania to design, develop and implement sustainable health information systems through application of best approaches and use of flexible and open ended technologies for efficient health data collection, processing, and use of information for action. At the core of the HISP Tanzania is the development and implementation of the open source <a href="http://www.Dhis2.org">DHIS2 software</a> and the use of this application to strengthen the health information system in Tanzania. (Visit the <a href="http://www.Dhis2.org">DHIS web site</a> for more on the software: <a href="http://www.Dhis2.org">www.Dhis2.org</a>.
                          </p><p>
                         The majority of activities for HISP Tanzania have been carried out in Pwani Region (a test region). The HISP Tanzania office for DHIS2 software development is located within UDSM Julius Nyerere Mlimani Campus in Dar es Salaam. We also provide technical support to various implementing partners in Tanzania including Clinton Health Access Initiative (CHAI) and Ifakara Health Institute (IHI) to implement and support the DHIS 2 in Mtwara and Lindi regions supported by CHAI and 27 SPD districts funded by IHI. Within the test region (Pwani), HISP Tanzania activities are carried out according to the national MOHSW action plan, as specified in the M&E Strengthening Initiative "Combined Plan" of 26th October, 2010. We have rolled out DHIS2 and new HMIS into Six Regions (Pwani, Dar es Salaam, Dodoma, Lindi, Mtwara and Shinyanga).
                        </p>
@@ -116,3 +78,4 @@ $(function(){
             </div>
     </body>
 </html>
+

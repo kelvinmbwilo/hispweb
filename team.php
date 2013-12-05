@@ -22,7 +22,7 @@ $query = mysql_query("SELECT * FROM team");
 <script>
 $(function(){
     $('.inner-div1').slimScroll({
-        height: '300px'
+        height: '270px'
     });
 });
 </script>

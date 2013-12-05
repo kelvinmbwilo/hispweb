@@ -1,5 +1,5 @@
 <!-- Footer ================================================================== -->
-	<div  id="footerSection" class="row-fluid">
+	<div  id="footerSection" class="container">
 	<div class="row-fluid">
 		<div class="row-fluid visible-desktop visible-tablet">
 			<div class="span4 text-left">
