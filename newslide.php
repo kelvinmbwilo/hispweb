@@ -7,7 +7,7 @@ $query1 = mysql_query("SELECT * FROM news_event ORDER BY added_time DESC LIMIT 5
    
 </style>
 <img src="img/news.png" style="" class="img-rounded">
-<div id="myCarousel1" class="carousel slide" >
+<div id="myCarousel1" class="carousel slide" style="font-family:cursive; line-height:22px ;color:#255;text-shadow: 0.5px 0.5px #000000;">
   
   <!-- Carousel items -->
   <div class="carousel-inner" style="max-height: 150px">
@@ -19,7 +19,7 @@ $query1 = mysql_query("SELECT * FROM news_event ORDER BY added_time DESC LIMIT 5
              ?>
       <h4 style="color: #003399"><a href="#" id="<?php $row['id'] ?>" class="viewnews"><?php echo $row['title'] ?></a></h4>
      
-      <p id="discr"><?php echo ($row['image']=="")?"":"<img src='uploads/news/{$row['image']}' style='height:60px;width:60px; padding-right:2px' class='pull-left img-rounded'>"; echo $row['discr'] ?></p>
+      <p id="discr" style="color:#255"><?php echo ($row['image']=="")?"":"<img src='uploads/news/{$row['image']}' style='height:60px;width:60px; padding-right:2px' class='pull-left img-rounded'>"; echo $row['discr'] ?></p>
       <?php
              echo "</div>";
              $k++;
@@ -28,7 +28,7 @@ $query1 = mysql_query("SELECT * FROM news_event ORDER BY added_time DESC LIMIT 5
              echo "<div class='item'>";
              ?>
       <h4 style="color: #003399"><a href="#" id="<?php $row['id'] ?>" class="viewnews"><?php echo $row['title'] ?></a></h4>
-      <p id="discr"><?php echo ($row['image']=="")?"":"<img src='uploads/news/{$row['image']}' style='height:60px;width:60px; padding-right:2px' class='pull-left img-rounded'>"; echo $row['discr'] ?></p>
+      <p id="discr" style="color:#255"><?php echo ($row['image']=="")?"":"<img src='uploads/news/{$row['image']}' style='height:60px;width:60px; padding-right:2px' class='pull-left img-rounded'>"; echo $row['discr'] ?></p>
       <?php
                echo "</div>";
                $k++;
