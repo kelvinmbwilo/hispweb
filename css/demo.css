@@ -41,7 +41,8 @@ section, header{
 body{
 	font-family: Cambria, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
 	/*background:url(../img/bak.png);*/
-        background:url(../img/bodyBg.png);
+        background:url(../img/boo.png);
+        /*background:url(../img/bodyBg.png);*/
         /*background-repeat: no-repeat;*/
 	font-weight: 400;
 	font-size: 15px;
